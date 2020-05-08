@@ -1,0 +1,56 @@
+/* pages/home/index.wxss */
+.s_swiper {
+  height: 360rpx;
+}
+.s_img {
+  width: 100%;
+  height: 360rpx;
+}
+/* 无 */
+.noMemo {
+  margin-top: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  color: #9A9A9A;
+  font-size: 14px;
+  line-height: 70rpx;
+}
+.b_wx {
+  padding-bottom: 30rpx; 
+}
+.m_wx {
+  box-sizing: border-box;
+  margin: 30rpx 30rpx 0;
+  padding: 30rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.m_wx:last-of-type {
+  border: none;
+}
+.m_top {
+  height: 70rpx;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.m_top .image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+  margin: 0 40rpx 0 0;
+}
+.m_top text {
+  color: rgb(116, 116, 116);
+  font-size: 14px;
+}
+.m_text {
+  box-sizing: border-box;
+  padding-left: 100rpx;
+  font-size: 15px;
+  color: rgb(102, 102, 102);
+}

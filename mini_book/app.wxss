@@ -1,0 +1,5 @@
+/**app.wxss**/
+page {
+  background-color: #F3F4F6;
+}
+@import "/components/common/index.wxss";

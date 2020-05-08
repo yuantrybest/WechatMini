@@ -1,0 +1,76 @@
+<!--pages/user/index.wxml-->
+<!-- 个人信息 -->
+<view class="header">
+  <view class="left">
+    <view class="image">
+      <!-- 用户头像 -->
+      <open-data type="userAvatarUrl"></open-data>  
+    </view>
+  </view>
+  <view class="right">
+    <!-- 用户昵称 -->
+    <open-data class="name" type="userNickName" lang="zh_CN"></open-data>
+    <view class="vip">
+      <image src="/img/member.png"></image>
+      <text>LV {{info.lv}}</text>
+    </view>
+  </view>
+</view>
+<!-- list -->
+<text class="title">我的</text>
+<view class="list">
+  <view class="box" bindtap="memoClick">
+    <view class="left">
+      <image src="/img/icon/love.png"></image>
+      <text>足迹</text>
+    </view>
+    <view class="right">
+      <text>添加足迹</text>
+      <van-icon name="arrow" size="1rem" color="rgb(107, 107, 107)"/>
+    </view>
+  </view>
+  <view class="box" bindtap="timeClick">
+    <view class="left">
+      <image src="/img/icon/time.png"></image>
+      <text>时光机</text>
+    </view>
+    <view class="right">
+      <text>添加时光机</text>
+      <van-icon name="arrow" size="1rem" color="rgb(107, 107, 107)"/>
+    </view>
+  </view>
+  <view class="box" bindtap="shareClick">
+    <view class="left">
+      <image src="/img/icon/share.png"></image>
+      <text>分享</text>
+    </view>
+    <view class="right">
+      <text>我的分享</text>
+      <van-icon name="arrow" size="1rem" color="rgb(107, 107, 107)"/>
+    </view>
+  </view>
+</view>
+<text class="title">系统</text>
+<view class="list">
+  <view class="box" bindtap="clickInfo">
+    <view class="left">
+      <image src="/img/icon/gao.png"></image>
+      <text>公告</text>
+    </view>
+    <view class="right">
+      <text>系统公告</text>
+      <van-icon name="arrow" size="1rem" color="rgb(107, 107, 107)"/>
+    </view>
+  </view>
+  <view class="box" bindtap="clickNew">
+    <view class="left">
+      <image src="/img/icon/system.png"></image>
+      <text>设置</text>
+    </view>
+    <view class="right">
+      <text>提交新功能</text>
+      <van-icon name="arrow" size="1rem" color="rgb(107, 107, 107)"/>
+    </view>
+  </view>
+</view>
+<van-dialog id="van-dialog" />

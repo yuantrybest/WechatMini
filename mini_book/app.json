@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/user/index",
+    "pages/system/notice",
+    "pages/system/new",
+    "pages/subject/time",
+    "pages/subject/memo"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FB5152",
+    "navigationBarTitleText": "简约日历",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#FB5152",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "/img/tabBar/n_home.png",
+        "selectedIconPath": "img/tabBar/home.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "/img/tabBar/n_user.png",
+        "selectedIconPath": "/img/tabBar/user.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

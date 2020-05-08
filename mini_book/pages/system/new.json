@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-notice-bar": "/components/notice-bar/index",
+    "van-button": "/components/button/index"
+  },
+  "navigationBarTitleText": "建议"
+}

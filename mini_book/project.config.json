@@ -1,0 +1,90 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.4",
+	"appid": "wx6193abb666921f6a",
+	"projectname": "mini_Book",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "公告",
+					"pathName": "pages/system/notice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "建议",
+					"pathName": "pages/system/new",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "备忘录",
+					"pathName": "pages/subject/memo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "时光机",
+					"pathName": "pages/subject/time",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

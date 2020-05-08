@@ -1,0 +1,54 @@
+<!--pages/home/index.wxml-->
+<swiper class="s_swiper" indicator-dots autoplay indicator-active-color="rgb(240, 240, 240)">
+  <!-- <swiper-item>
+    <image class="s_img" src="/img/swiper/1.png"></image>
+  </swiper-item> -->
+  <swiper-item>
+    <image class="s_img" src="/img/swiper/2.png"></image>
+  </swiper-item>
+</swiper>
+<van-tabs bind:click="onClick">
+  <van-tab title="足迹">
+    <view class="noMemo" wx:if="{{memo.length === 0}}">
+      <van-icon name="more-o" size="2.5rem" color="#9A9A9A"/>
+      <text>还没有足迹呢</text>
+      <van-button round plain type="primary" size="small" bindtap="bClick">去添加</van-button>
+    </view>
+    <view class="b_wx" wx:if="{{memo.length > 0}}">
+      <view class="m_wx" wx:for="{{memo}}" wx:key="index">
+        <view class="m_top">
+          <view class="image">
+            <!-- 用户头像 -->
+            <open-data type="userAvatarUrl"></open-data>  
+          </view>
+          <text>时间：{{item.time}}</text>
+        </view>
+        <view class="m_text">
+          {{item.text}}
+        </view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="时光机">
+  <view class="noMemo" wx:if="{{time.length === 0}}">
+    <van-icon name="clock-o" size="2.5rem" color="#9A9A9A"/>
+      <text>还没有时光机呢</text>
+      <van-button round plain type="primary" size="small" bindtap="sClick">去添加</van-button>
+    </view>
+    <view class="b_wx" wx:if="{{time.length > 0}}">
+      <view class="m_wx" wx:for="{{time}}" wx:key="index">
+        <view class="m_top">
+          <view class="image">
+            <!-- 用户头像 -->
+            <open-data type="userAvatarUrl"></open-data>  
+          </view>
+          <text wx:if="{{item.type === '1'}}">时光机：距离{{item.time}}已有{{item.days}}天</text>
+          <text wx:if="{{item.type === '2'}}">计时器：距离{{item.time}}还有{{item.days}}天</text>
+        </view>
+        <view class="m_text">
+          {{item.text}}
+        </view>
+      </view>
+    </view>
+  </van-tab>
+</van-tabs>

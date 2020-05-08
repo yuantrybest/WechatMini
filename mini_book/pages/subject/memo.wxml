@@ -1,0 +1,29 @@
+<!--pages/subject/Memo.wxml-->
+<van-notice-bar
+  wrapable
+  text="请注意字数上限为140"
+  scrollable="false"
+  left-icon="warning-o"
+  color="#3E9BFA"
+  backgroundColor="#ECF9FF"
+/>
+<van-cell title="选择时间" value="{{sTime}}" bindtap="setTime" is-link />
+<view class="box">
+  <textarea class="area" placeholder="足迹内容" bindblur="okClick"></textarea>
+</view>
+<view class="footer">
+  <van-button round type="primary" size="large" bindtap="saveClick">添加</van-button>
+</view>
+<!-- 选择时间 -->
+<van-popup
+  show="{{ show }}"
+  position="bottom"
+  bind:close="cancel">
+  <van-datetime-picker
+    type="date"
+    value="{{ currentDate }}"
+    formatter="{{ formatter }}"
+    bind:confirm="confirm"
+    bind:cancel="cancel"
+  />  
+</van-popup>

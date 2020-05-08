@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-notice-bar": "/components/notice-bar/index",
+    "van-divider": "/components/divider/index"
+  },
+  "navigationBarTitleText": "公告"
+}

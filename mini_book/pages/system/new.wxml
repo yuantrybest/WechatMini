@@ -1,0 +1,15 @@
+<!--pages/system/new.wxml-->
+<van-notice-bar
+  wrapable
+  text="由于简约日历是一款个人开发，运营的小程序，所以可能有许多不足的地方，欢迎大家提交建议或者新功能，我将结合个人开发周期，采取大家的建议。"
+  scrollable="false"
+  left-icon="warning-o"
+  color="#3E9BFA"
+  backgroundColor="#ECF9FF"
+/>
+<view class="box">
+  <textarea class="area" placeholder="您的建议" bindblur="okClick"></textarea>
+</view>
+<view class="footer">
+  <van-button round type="primary" size="large" bindtap="saveClick">提交</van-button>
+</view>

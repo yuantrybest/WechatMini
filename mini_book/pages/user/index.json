@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-icon": "/components/icon/index",
+    "van-dialog": "/components/dialog/index"
+  },
+  "navigationBarTitleText": "个人中心"
+}

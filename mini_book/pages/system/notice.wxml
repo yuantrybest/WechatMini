@@ -1,0 +1,10 @@
+<!--pages/system/notice.wxml-->
+<view wx:for="{{list}}" wx:key="index">
+  <van-divider contentPosition="center">{{item.time}}</van-divider>
+  <van-notice-bar
+    wrapable
+    scrollable="false"
+    left-icon="/img/icon/message.png"
+    text="{{item.text}}"
+  />
+</view>

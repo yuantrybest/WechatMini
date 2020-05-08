@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-tab": "/components/tab/index",
+    "van-tabs": "/components/tabs/index",
+    "van-icon": "/components/icon/index",
+    "van-button": "/components/button/index"
+  },
+  "navigationBarTitleText": "简约纪念"
+}
